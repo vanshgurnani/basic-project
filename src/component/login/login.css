@@ -1,0 +1,35 @@
+.body-login {
+    /* background-color: #b5cbdb; */
+    background-image: url('../images/back.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-register {
+    /* background-color: #b5cbdb; */
+    background-image: url('../images/pxfuel.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .login{
+    color: white;
+  }
+  .card-login{
+    text-align: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 800px; 
+    border: 1px solid #373333;
+    border-radius: 8px;
+    background-color: rgba(249, 249, 249, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  .form-control{
+    width: 300px;
+  }
