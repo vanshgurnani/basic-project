@@ -12,13 +12,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
-    'http://localhost:3000',
-    'https://text-util-iota.vercel.app',
-    'https://notenews.onrender.com',
-    'https://flask-production-71e4.up.railway.app',
-    'https://text-util-five.vercel.app',
-    'https://text-util-dj8q.vercel.app'
-    // 'https://python-jugp.vercel.app',
+  'https://basic-project-nu.vercel.app',
+  'https://basic-project-2zs2.vercel.app'
   // Replace with your Vercel frontend URL
   ];
   
