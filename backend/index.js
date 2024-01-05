@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
   'https://basic-project-nu.vercel.app',
-  'https://basic-project-2zs2.vercel.app/user',
+  'https://basic-project-2zs2.vercel.app',
   'http://localhost:3000'
   // Replace with your Vercel frontend URL
   ];
