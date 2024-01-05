@@ -3,6 +3,20 @@ const router = express.Router();
 const User = require('../models/usersmodel');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const cors = require('cors');
+
+const allowedOrigins = [
+  'https://basic-project-nu.vercel.app',
+  'https://basic-project-2zs2.vercel.app',
+  'http://localhost:3000'
+];
+
+// Apply CORS middleware to the router
+router.use(cors({
+  origin: allowedOrigins,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true
+}));
 
 
 // Registration endpoint
