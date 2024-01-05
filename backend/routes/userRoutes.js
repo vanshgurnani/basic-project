@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs');
 const cors = require('cors');
 
 const allowedOrigins = [
-  'https://basic-project-nu.vercel.app',
+  'https://basic-project-gules.vercel.app',
   'https://basic-project-2zs2.vercel.app',
   'http://localhost:3000'
 ];

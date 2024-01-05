@@ -31,8 +31,8 @@ const Registration = () => {
     }
 
     try {
-      // https://basic-project-nu.vercel.app
-      const response = await axios.post('https://basic-project-nu.vercel.app/user/registers', userData);
+      // https://basic-project-gules.vercel.app/
+      const response = await axios.post('https://basic-project-gules.vercel.app/user/registers', userData);
 
       if (response.status === 201) {
         setResponse('Registration Successful!');
