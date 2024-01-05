@@ -18,7 +18,8 @@ function LoginForm() {
     }
 
     try {
-      const response = await axios.post('https://basic-project-nu.vercel.app/user/api/login', { email, password });
+      // https://basic-project-nu.vercel.app
+      const response = await axios.post('http://localhost:5000/user/api/login', { email, password });
       const { token } = response.data;
 
       if (response.status === 200) {
