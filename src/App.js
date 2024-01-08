@@ -3,14 +3,17 @@ import Login from '../src/component/login/login';
 import About from './component/about/me';
 import Main from './component/dashboard/main';
 import Register from './component/login/register';
+import PrivateRoutes from './component/utils/PrivateRoutes';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route element={<PrivateRoutes />}>
+          <Route exact path='/main' element={<Main />} />
+          <Route exact path='/about' element={<About />}/>
+        </Route>
         <Route exact path='/' element={<Login />}/>
-        <Route exact path='/about' element={<About />}/>
-        <Route exact path='/main' element={<Main />} />
         <Route exact path='/register' element={<Register />} />
       </Routes>
     </Router>
