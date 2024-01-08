@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Navigate } from 'react-router-dom';
 import '../login/login.css';
 import { jwtDecode } from 'jwt-decode';
 
@@ -40,6 +41,8 @@ function LoginForm() {
 
         // Redirect to another page (e.g., /notes)
         window.location.href = '/main';
+        // navigate('/main');
+        // return <Navigate to="/main" />;
       } else {
         setError('Invalid credentials');
       }
