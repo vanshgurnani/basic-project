@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
 import Login from '../src/component/login/login';
 import About from './component/about/me';
 import Main from './component/dashboard/main';
@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="*" element={<Navigate to="/" />} />
         <Route element={<PrivateRoutes />}>
           <Route exact path='/main' element={<Main />} />
           <Route exact path='/about' element={<About />}/>
